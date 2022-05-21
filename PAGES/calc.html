@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../STATIC/CSS/calc.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="cont">
+        <header>
+            <div class="logo">
+                <img src="../STATIC/IMAGES/Logo_BF.png" alt="">
+            </div>
+            <div class="header_info">
+                <a href="../index.html"><div class="header_col">Главная</div></a>
+                <a href="../PAGES/more.html"><div class="header_col">О компании</div></a>
+                <a href="../PAGES/ab.html"><div class="header_col">Контакты</div></a>
+            </div>
+        </header>
+        <div class="kost"></div>
+    </div>
+    <div class="bg">
+        <div class="container">
+            <form action="">
+                <h1>Калькулятор</h1>
+                <p>Посчитайте затраты на окно</p>
+                <label for="price">Ширина окна</label>
+                <input value="1000" type="text" class="sizeW">
+                <br />
+                <label for="down-payment">Длина окна</label>
+                <input value="1000" type="text" class="sizeH">
+                <br />
+                
+                <label>Кол-во окон</label>
+                <input value="1" type="number" class="colichestvo">
+                <br />
+                
+                <label>Кол-во створок</label>
+                <select class="stvorki">
+                    <option value="1">1 створка</option>
+                    <option value="2">2 створки</option>
+                    <option value="3">3 створки</option>
+                </select>
+                <label>Конфигурация</label>
+                <select class="conf">
+                    <option value="1">Глухое</option>
+                    <option value="2">Поворотное</option>
+                    <option value="3">Поворотно откидное</option>
+                </select>
+                
+                <button type=button>Посчитать</button>
+            </form>
+            <div class="cost">0</div>
+        </div>
+    </div>
+<div class="Title"><div class="title_text">В расчеты входит</div><div class="title_dec"></div></div>
+<div class="ss">
+    <div class="cont">
+        <div class="block">
+            <div class="block_name">Материалы</div>
+            <div class="block_sur">1000 рублей</div>
+        </div>
+        <div class="block">
+            <div class="block_name">Монтаж</div>
+            <div class="block_sur">1400 рублей</div>
+        </div>
+        <div class="block">
+            <div class="block_name">Подоконник</div>
+            <div class="block_sur">500 рублей метр</div>
+        </div>
+    </div>
+    <div class="cont ss">
+        <div class="block">
+            <div class="block_name">Отлив</div>
+            <div class="block_sur">500 рублей метр</div>
+        </div>
+        <div class="block">
+            <div class="block_name">Откос</div>
+            <div class="block_sur">500 рублей метр</div>
+        </div>
+    </div>
+</div>
+<div class="cos">
+    <div class="bottom">
+        <div class="bot_col"><img src="../STATIC/IMAGES/Logo_BF.png" alt=""></div>
+        <div class="bot_col">
+            <div class="bot_row_title">Партнеры</div>
+            <div class="bot_row">Veka</div>
+            <div class="bot_row">Hilti</div>
+            <div class="bot_row">Дом строй</div>
+            <div class="bot_row">Makita</div>
+        </div>
+        
+        <div class="bot_col">
+            <div class="bot_row_title">Посредники</div>
+            <div class="bot_row">БФК</div>
+            <div class="bot_row">Alutech</div>
+            <div class="bot_row">Технониколь</div>
+            <div class="bot_row">Брусника</div>
+        </div>
+    </div>
+    <div class="under_bot">
+        <div class="under_bot_text">Created by: <div class="under_bot_text_w"> fijsra.den4ik2000@mail.ru</div></div>
+    </div>
+</div>
+    
+
+    <script src="../SCRIPTS/main.js"></script>
+</body>
+</html>
