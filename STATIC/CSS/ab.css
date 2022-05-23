@@ -318,6 +318,9 @@ header .logo img{
         background-color: rgba(255, 255, 255, 0.8);
         
     }
+    .bot_col{
+        padding-right: 0px;
+    }
     header .logo img{
         position: absolute;
         width: 10px;

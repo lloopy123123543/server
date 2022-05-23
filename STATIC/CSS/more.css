@@ -323,4 +323,7 @@ header .logo img{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .bot_col{
+        padding-right: 0px;
+    }
 }
