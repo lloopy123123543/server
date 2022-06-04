@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    cursor: default;
+  }
+  
+  /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+  ul[class],
+  ol[class] {
+    list-style: none;
+  }
+  
+  /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  article > * + * {
+    margin-top: 1em;
+  }
+input,
+button,
+textarea,
+
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: auto;
+}
+body{
+
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 40px;
+    height: auto;
+    background-color: #520056;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+.header_block{
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header_col{
+    text-align: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+.header_col_dec{
+    width: 0%;
+    height: 2px;
+    background-color: white;
+}
+.header_col:hover .header_col_dec{
+    animation: header 10s;
+}
+.popap{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.611);
+  transition: 1s;
+
+
+}
+.popap button{
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+}
+#popap_close:target{
+  opacity:0;
+  visibility: hidden;
+}
+#popap:target{
+  opacity: 1;
+  visibility: visible;
+}
+.Close{
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: .2s;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+.Close:hover{
+  background-color: red;
+  color: white;
+}
+.Title{
+  text-align: center;
+  font-size: 40px;
+  color: green;
+}
+.popap_content{
+  width: 320px;
+  height: 320px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+
+}
+main button{
+  width: 100%;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+main button:hover{
+  background-color: rgb(180, 17, 50);
+}
+
+@keyframes header {
+    0%{
+        width: 0%;
+    }
+    5%{
+        width: 100%;
+    }
+    10%{
+        width: 100%;
+    }
+    25%{
+        width: 100%;
+
+    }
+    50%{
+        width: 100%;
+
+    }
+    75%{
+        width: 100%;
+
+    }
+    100%{
+        width: 100%;
+
+    }
+}
+.kost{
+    height: 90px;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #FA7621;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+.main_block{
+    width: 300px;
+    min-height: 300px;
+    height: auto;
+    background-color:white ;
+    background-size: 40%;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+    transition: .25s;
+    color: black;
+    animation: moves 1.2s;
+    
+}
+.main_block:hover{
+  margin-top: -30px;
+}
+.for_img{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #3f4b4f;
+    background: url("../public/372597077-firewatch-E1zm-1920x1080-MM-100.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    text-shadow: 3px 5px 0px black;
+    text-align: center;
+}
+.text1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.text2{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+}
+@keyframes moves {
+  0%{
+    margin-top: -50px;
+    transform: rotateY(0deg);
+  }
+  
+  50%{
+    transform: rotateY(180deg);
+    margin-top: 0px;
+  }
+
+  100%{
+    transform: rotateY(0deg);
+    margin-top: 0px;
+  }
+}
